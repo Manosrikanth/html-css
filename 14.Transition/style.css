@@ -1,0 +1,12 @@
+div{
+    height: 150px;
+    width: 150px;
+    background: black;
+    transition-duration: 10s;
+    transition-delay: 3s;
+    transition-timing-function: ease-in-out;
+}
+
+div:hover{
+    transform: rotate(3600deg);
+}

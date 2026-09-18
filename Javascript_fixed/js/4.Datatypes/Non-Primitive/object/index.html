@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //literal 
+        let stu={
+            sname:"Shubham",
+            sid:34,
+            splace:"uttar pradesh"
+
+        }
+        stu.spincode=272002
+        delete stu.spincode
+        console.log(stu);
+        console.table(stu , typeof stu)
+
+        // new keyword 
+        let emp = new Object
+        emp.enmae='shubh'
+        emp.eid=38
+        console.log(emp,typeof emp);
+
+        // using constructor function
+        function movie(mname , mid){
+            this.mname=mname
+            this.mid=mid
+        }
+        let m1=new movie("KGF",1234)
+        let m2=new movie("RRR",264)
+        console.log(m1,typeof m1);
+        console.log(m2, typeof m2);
+        
+        
+        
+         
+    </script>
+</body>
+</html>

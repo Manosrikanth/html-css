@@ -1,0 +1,31 @@
+/* Link states */
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: red;
+}
+
+/* Children */
+
+li:first-child {
+    background-color: red;
+}
+
+li:last-child {
+    background-color: purple;
+}
+
+li:nth-child(3) {
+    background-color: green;
+}

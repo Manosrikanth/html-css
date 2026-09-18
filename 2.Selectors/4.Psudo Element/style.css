@@ -1,0 +1,19 @@
+h1::first-letter {
+    color: crimson;
+}
+
+p::first-letter {
+    font-size: 30px;
+}
+
+p::before {
+    content: "Before ";
+}
+
+p::after {
+    content: " After";
+}
+
+p::selection {
+    background-color: yellow;
+}

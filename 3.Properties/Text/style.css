@@ -1,0 +1,27 @@
+h1 {
+    color: crimson;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+    text-shadow: 2px 2px 2px gray;
+}
+
+p {
+    text-align: justify;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+input{
+    text-overflow: ellipsis;
+}
+
+section{
+    height:300px;
+    width: 300px;
+    border: 1px solid black;
+    word-break: break-all;
+
+}

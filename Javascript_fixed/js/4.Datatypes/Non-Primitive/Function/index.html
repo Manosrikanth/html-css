@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Anonymous function
+        // function(){
+        //     console.log("I am anonymous function")
+        // }
+        // ()
+
+        // named function 
+        
+        function shubh(){
+            console.log("I am named function")
+        }
+        shubh()
+
+        //function with expression 
+        
+        const ball= function hi(){
+            console.log("I am function with expression ")
+        }
+        ball()
+
+        // immediately invoked function expression (IIFE)
+        // (function(){
+        //     console.log("I am IIFE function")
+        // })
+        // ()
+
+        // arrow function
+        const arrow=()=>{
+            console.log("I am arrow function")
+        }
+        arrow()
+
+        //currying function
+        function sum(a){
+            return function(b){
+                return function(c){
+                    return a+b+c
+                }
+            }
+        }
+        console.log(sum(2)(3)(4))
+
+    </script>
+</body>
+</html>

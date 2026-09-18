@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=[1,2,3,4,5]
+        console.log(a);
+        
+        let b=a.push(6,7,8)
+        console.log(a);
+        
+        let c= a.pop()
+        console.log(a);
+
+        let d= a.unshift(0)
+        console.log(a);
+
+        let e= a.shift()
+        console.log(a);
+
+        let numbers=[100,200,300,400]
+        console.log(numbers);
+
+        let f=numbers.map((value,index)=>console.log(value))
+        //using callback function 
+        let g=numbers.map((value,index)=>value*2)
+        console.log(g);
+
+        let h=numbers.filter((value,index)=>value>100)
+        console.log(h)
+
+        let i=numbers.find((value,index)=>value>200)
+        console.log(i)
+
+        let j=numbers.reduce((prev,curr)=>prev+curr)
+        console.log(j);
+        
+        let k=numbers.some((value,index)=> value>300)
+        console.log(k)
+
+        let l=numbers.every((value,index)=> value>=100)
+        console.log(l);
+
+        for (const key in numbers){
+            console.log(key)
+        }
+        for(const key of numbers){
+            console.log(key)
+        }
+        let m= numbers.forEach((value,index)=> console.log(`${value}===${index}`))
+
+        let n= numbers.map((value,index)=> console.log(`${value}===${index}`))
+
+        let o= numbers.forEach((value,index)=> value*2)
+        console.log(o) //undefined
+
+        let p= numbers.map((value,index)=> value*2)
+        console.log(p) // new array 
+
+        let q=numbers.reverse()
+        console.log(q);
+
+        let r= numbers.join()
+        console.log(r)
+        
+        let s= numbers.sort()
+        console.log(s);
+        
+        
+    </script>
+</body>
+</html>

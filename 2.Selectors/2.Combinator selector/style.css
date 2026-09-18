@@ -1,0 +1,19 @@
+/* Descendant selector */
+section p {
+    color: red;
+}
+
+/* Child selector */
+section > p {
+    background-color: yellow;
+}
+
+/* Adjacent sibling selector */
+section + p {
+    color: blue;
+}
+
+/* General sibling selector */
+section ~ p {
+    font-weight: bold;
+}

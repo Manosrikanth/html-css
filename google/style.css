@@ -1,0 +1,49 @@
+body {
+    background-color: #202124;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Circle */
+.logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    background: conic-gradient(
+        red 0deg 90deg,
+        blue 90deg 180deg,
+        green 180deg 270deg,
+        yellow 270deg 360deg
+    );
+
+    position: relative;
+}
+
+/* Middle hole */
+.logo::before {
+    content: "";
+    width: 140px;
+    height: 140px;
+    background-color: #202124;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+/* Blue bar */
+.bar {
+    width: 90px;
+    height: 30px;
+    background-color: blue;
+
+    position: absolute;
+    top: 65px;
+    right: 0;
+
+    z-index: 2;
+}

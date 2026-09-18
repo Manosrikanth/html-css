@@ -1,0 +1,39 @@
+.card{
+    height: 300px;
+    width: 250px;
+    border: 1px solid black;
+    overflow: hidden;
+    position: relative;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card img:hover{
+    transform:scale(1.5);
+    transition:all 2s;
+    filter: grayscale(100%);
+}
+
+.bio{
+    position: absolute;
+    top: 200px;
+    text-align: center;
+    opacity: 0;
+}
+
+.title,
+.occupation{
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+}
+
+
+div img:hover ~ .bio{
+    opacity: 0.9;
+    transition: all 3s;
+}

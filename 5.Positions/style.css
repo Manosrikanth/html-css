@@ -1,0 +1,30 @@
+section {
+    height: 400px;
+    width: 100%;
+    background: black;
+
+    display: flex;
+    gap: 10px;
+
+    position: sticky;
+    top: 0;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    background: red;
+    border: 1px solid white;
+}
+
+/* box1 {
+    position: static;
+    top: 100px;
+    left: 100px;
+}
+
+box2 {
+    position: relative;
+    top: 100px;
+    left: 100px;
+} */

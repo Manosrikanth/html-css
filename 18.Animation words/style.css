@@ -1,0 +1,25 @@
+section {
+    height: 100px;
+    width: 100%;
+    background: black;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    color: brown;
+}
+
+span {
+    font-size: 100px;
+    font-weight: 900;
+    display: inline-block;
+    animation: word 1s infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes word {
+    0% {
+        transform: translateY(0px);
+    }
+
+    20% {
+        transform: translateY(-20px);
+    }
+}
