@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>createElement vs cloneNode</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 600px; margin: 20px auto; padding: 0 16px; line-height: 1.5; }
+    .box { border: 1px solid #999; padding: 8px 12px; margin: 6px 0; border-radius: 6px; }
+    button { padding: 8px 14px; margin: 4px 4px 4px 0; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>createElement vs cloneNode</h2>
+
+  <div id="original" class="box">
+    <b>Original</b>
+    <span>(has a child span)</span>
+  </div>
+
+  <button id="btnCreate">createElement</button>
+  <button id="btnCloneDeep">cloneNode(true)</button>
+  <button id="btnCloneShallow">cloneNode(false)</button>
+
+  <div id="output"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
