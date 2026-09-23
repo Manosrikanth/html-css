@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>onevent vs addEventListener</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 600px; margin: 20px auto; padding: 0 16px; line-height: 1.5; }
+    button { padding: 8px 14px; margin: 4px 4px 4px 0; cursor: pointer; }
+    #log { background: #f3f3f3; padding: 8px 12px; min-height: 60px; font-family: monospace; white-space: pre-wrap; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <h2>onevent vs addEventListener</h2>
+
+  <button id="btnOn">onclick (property)</button>
+  <button id="btnListener">addEventListener</button>
+  <button id="btnRemove">Remove listener A</button>
+  <button id="btnClear">Clear log</button>
+
+  <p><b>Log:</b></p>
+  <div id="log"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
